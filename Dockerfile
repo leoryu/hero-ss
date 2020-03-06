@@ -10,4 +10,4 @@ RUN apk add --no-cache curl \
   && gzip -d gost-linux-amd64-${VER}.gz \
   && chmod +x gost-linux-amd64-${VER}
 
-CMD /gost-linux-amd64-${VER} -L=socks5://forgame:${PASSWORD}@:${PORT}
+CMD /gost-linux-amd64-${VER} -L=http://forgame:${PASSWORD}@:${PORT}
